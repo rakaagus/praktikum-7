@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studi Kasus</title>
+    <!-- link style css -->
+    <link rel="stylesheet" href="assets/css/web13.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="heading">
+            <h3>Menghitung Luas & Keliling Lingkaran</h3>
+        </div>
+
+        <div class="box">
+            <form action="">
+                <div class="formGroup">
+                    <input type="number" id="bilanganPertama" onchange="cetakHasil()" placeholder="Masukan Nilai Pertama"> +
+                    <input type="number" id="bilanganKedua" onchange="cetakHasil()" placeholder="Masukan Nilai Kedua"> =
+                    <!-- <button onclick="cetakHasil()">Cetak Hasil</button> = -->
+                    <input type="number" id="hasil" placeholder="Hasil Perhitungan">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <script>
+        function cetakHasil() {
+            let bilanganPertama = document.getElementById('bilanganPertama').value;
+            let bilanganKedua = document.getElementById('bilanganKedua').value;
+            let hasil = document.getElementById('hasil');
+            hasil.value = Number(bilanganPertama) + Number(bilanganKedua)
+        }
+    </script>
+
+</body>
+
+</html>

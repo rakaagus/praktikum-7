@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- style custome -->
+    <link rel="stylesheet" href="assets/css/web10.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h3>Menghitung Luas & Keliling Lingkaran</h3>
+        </div>
+
+        <div class="box">
+            <form action="">
+                <div class="formGroup">
+                    <label for="diameterLuasLingkaran">Rumus Mencari Luas Lingkaran</label>
+                    <input type="number" id="diameterLuasLingkaran" placeholder="Masukan Diameter">
+                    <button type="button" onclick="hitungLuasLingkaran()" class="btn">Hitung</button>
+                    <input type="number" id="hasilLuasLingkaran" placeholder="Hasil Perhitugan">
+                </div><br><br>
+
+                <div class="formGroup">
+                    <label for="diameterKelilingLingkaran">Rumus Mencari Keliling Lingkaran</label>
+                    <input type="number" id="diameterKelilingLingkaran" placeholder="Masukan Diameter">
+                    <button type="button" onclick="hitungKelilingLingkaran()" class="btn">Hitung</button>
+                    <input type="number" id="hasilKelilingLingkaran" placeholder="Hasil Perhitungan">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        function hitungLuasLingkaran() {
+            let diameter = document.getElementById('diameterLuasLingkaran').value;
+            let hasil = document.getElementById('hasilLuasLingkaran');
+            let jariJari = diameter / 2;
+
+            hasil.value = 3.14 * (jariJari * jariJari);
+        }
+
+        function hitungKelilingLingkaran() {
+            let diameter = document.getElementById('diameterKelilingLingkaran').value;
+            let hasil = document.getElementById('hasilKelilingLingkaran');
+            hasil.value = 3.14 * diameter;
+        }
+    </script>
+</body>
+
+</html>

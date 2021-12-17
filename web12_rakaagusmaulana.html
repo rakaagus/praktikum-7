@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link style -->
+    <link rel="stylesheet" href="assets/css/web12.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="heading">
+            <h3>Menghitung Biaya Parkir</h3>
+        </div>
+
+        <div class="box">
+            <form action="">
+                <div class="formGroup">
+                    <input type="number" id="jamMasuk" placeholder="Masukan Jam Masuk Kendaraan">
+                    <input type="number" id="jamKeluar" placeholder="Masukan Jam Keluar Kendaraan">
+                    <button type="button" onclick="hitungBayarParkir()">Hitung</button>
+                    <h4>Lama Parkir : <span id="lamaParkir"></span></h4>
+                    <h4>Total: <span id="biayaParkir"></span></h4>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function hitungBayarParkir() {
+            let jamMasuk = document.getElementById('jamMasuk').value;
+            let jamKeluar = document.getElementById('jamKeluar').value;
+
+            let lamaJamParkir = jamKeluar - jamMasuk
+
+            let jumlahBayar
+
+            if (lamaJamParkir == 2) {
+                jumlahBayar = 300
+            } else {
+                jumlahBayar = (lamaJamParkir * 2000) - 3000
+            }
+
+            document.getElementById('lamaParkir').innerHTML = lamaJamParkir + " jam";
+            document.getElementById('biayaParkir').innerHTML = "Rp. " + jumlahBayar;
+        }
+    </script>
+</body>
+
+</html>

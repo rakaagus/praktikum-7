@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motor</title>
+</head>
+
+<body>
+    <button onclick="onderdilKlakson()">Klakson</button>
+    <p id="bunyi">...</p>
+    <!-- function adalah sebauh alat yang digunakan untuk membuat website menjadi dinasmis -->
+    <!-- function biasanya dipanggil berkali kali -->
+
+
+    <script>
+        // deklarasi
+
+        function onderdilKlakson() {
+            //isi perintah
+            //perintahnya adalah menglarkan bunyi
+            let bunyi = document.getElementById('bunyi');
+
+            if (bunyi.textContent.includes('tin tin tin')) {
+                bunyi.innerHTML = '...';
+            } else {
+                bunyi.innerHTML = 'tin tin tin';
+            }
+        }
+
+        // let nilai = 1001;
+        // if (nilai >= 90 && nilai < 100) {
+        //     console.log('Nilai A');
+        // } else if (nilai < 90) {
+        //     console.log('Nilai B');
+        // } else {
+        //     console.log('Salah Input');
+        // }
+    </script>
+
+</body>
+
+</html>

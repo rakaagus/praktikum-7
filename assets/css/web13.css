@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,100;1,500&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  background-color: #2FE5CE;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.container .heading {
+  color: #130f40;
+  margin: 1.8rem auto;
+  text-align: center;
+}
+
+.container .box {
+  margin: 2rem auto;
+  width: 50%;
+  height: 280px;
+  border-radius: .5rem;
+  background-color: white;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.container .box form {
+  padding-top: 1rem;
+}
+
+.container .box form .formGroup {
+  padding-top: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .9rem;
+}
+
+.container .box form .formGroup label {
+  text-align: center;
+  color: #130f40;
+  font-weight: bold;
+}
+
+.container .box form .formGroup input {
+  width: 50%;
+  height: 2.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: .2rem;
+}
+
+.container .box form .formGroup input::-webkit-input-placeholder {
+  color: #130f40;
+  text-align: center;
+}
+
+.container .box form .formGroup input:-ms-input-placeholder {
+  color: #130f40;
+  text-align: center;
+}
+
+.container .box form .formGroup input::-ms-input-placeholder {
+  color: #130f40;
+  text-align: center;
+}
+
+.container .box form .formGroup input::placeholder {
+  color: #130f40;
+  text-align: center;
+}
+
+.container .box form .formGroup button {
+  width: 25%;
+  height: 2.5rem;
+  background-color: #2FE5CE;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: .2rem;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.container .box form .formGroup button:hover {
+  background-color: #130f40;
+}
+/*# sourceMappingURL=web13.css.map */

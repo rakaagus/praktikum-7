@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengitung kurs dolars</title>
+
+    <!-- style custome -->
+    <link rel="stylesheet" href="assets/css/web11.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="heading">
+            <h3>convert dolar kerupiah</h3>
+        </div>
+
+        <div class="box">
+            <form action="">
+                <div class="formGroup">
+                    <input type="number" id="dolar" placeholder="Masukan NIlai dolar">
+                    <button type="button" onclick="dolarToRupiah()">Convert</button>
+                    <h3>Hasil : <span id="hasilDolar"></span></h3>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function dolarToRupiah() {
+            let dolar = document.getElementById('dolar').value;
+            let hasil = dolar * 14650;
+
+            var number_string = hasil.toString(),
+                sisa = number_string.length % 3,
+                rupiah = number_string.substr(0, sisa),
+                ribuan = number_string.substr(sisa).match(/\d{3}/g);
+
+            if (ribuan) {
+                separator = sisa ? '.' : '';
+                rupiah += separator + ribuan.join('.');
+            }
+
+            document.getElementById('hasilDolar').innerHTML = " Rp " + rupiah;
+        }
+    </script>
+</body>
+
+</html>
